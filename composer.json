@@ -1,0 +1,49 @@
+{
+    "name": "digibrush/singular-api",
+    "type": "library",
+    "description": "A simple singular integration for laravel",
+    "keywords": [
+        "digibrush",
+        "singular-api"
+    ],
+    "homepage": "https://github.com/digibrush/singular-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Achintha Rodrigo",
+            "email": "achintha@digibrush.net",
+            "homepage": "www.digibrush.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~7.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : ">=8.0",
+        "squizlabs/php_codesniffer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DigiBrush\\SingularAPI\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DigiBrush\\SingularAPI\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
